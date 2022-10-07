@@ -2,10 +2,11 @@
 package stack
 
 import (
-	"github.com/badgerodon/collections/stack"
 	"math"
 	"strconv"
 	"strings"
+
+	"github.com/badgerodon/collections/stack"
 )
 
 // RPNStack prints the result of a string in reverse polish notation (postfix)
@@ -19,7 +20,11 @@ func RPNStack(input string) float64 {
 		case "+":
 			stackOperands.Push(stackOperands.Pop().(float64) + stackOperands.Pop().(float64))
 		case "-":
-			stackOperands.Push(-stackOperands.Pop().(float64) + stackOperands.Pop().(float64))
+			operandLeft, operandRight := stackOperands.Pop(), stackOperands.Pop()
+			if operandRight == nil {
+				operandRight = float64(0)
+			}
+			stackOperands.Push(-operandLeft.(float64) + operandRight.(float64))
 		case "*":
 			stackOperands.Push(stackOperands.Pop().(float64) * stackOperands.Pop().(float64))
 		case "/":
