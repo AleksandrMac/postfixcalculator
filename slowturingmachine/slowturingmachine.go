@@ -6,10 +6,11 @@
 package slowturingmachine
 
 import (
-	values "github.com/iwdgo/postfixcalculator/common"
 	"math"
 	"strconv"
 	"strings"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 // RPNSlowTuringMachine returns the result of a string in reverse polish notation (postfix)

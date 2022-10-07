@@ -2,8 +2,9 @@ package operatorsnofields
 
 import (
 	"fmt"
-	values "github.com/iwdgo/postfixcalculator/common"
 	"testing"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 /* if fmt.Print has an output (debug mode) */

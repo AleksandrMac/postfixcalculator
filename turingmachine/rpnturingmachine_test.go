@@ -2,8 +2,9 @@ package turingmachine
 
 import (
 	"fmt"
-	values "github.com/iwdgo/postfixcalculator/common"
 	"testing"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 func ExampleRPNTuringMachine() {

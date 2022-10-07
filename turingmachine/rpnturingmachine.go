@@ -2,10 +2,11 @@
 package turingmachine
 
 import (
-	values "github.com/iwdgo/postfixcalculator/common"
 	"math"
 	"strconv"
 	"strings"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 // RPNTuringMachine returns the result of a string in reverse polish notation (postfix) by using a turing machine.
@@ -78,7 +79,7 @@ func RPNTuringMachine(RPNInput string) float64 {
 			}
 			words[index] = "?" // erasing operator as operation is completed
 			// break was here
-			index = 0 // re-starting without re-init for. Not the cleanest
+			// index = 0 // re-starting without re-init for. Not the cleanest
 		}
 	}
 	// counting remaining ops is not needed as the previous for loop stops only

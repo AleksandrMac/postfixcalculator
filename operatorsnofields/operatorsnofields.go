@@ -3,10 +3,11 @@
 package operatorsnofields
 
 import (
-	values "github.com/iwdgo/postfixcalculator/common"
 	"math"
 	"strconv"
 	"strings"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 // RPNOperatorsNoFields returns the result of a sequence of operations written in

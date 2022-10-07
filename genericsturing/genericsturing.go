@@ -2,10 +2,11 @@
 package genericsturing
 
 import (
-	values "github.com/iwdgo/postfixcalculator/common"
 	"math"
 	"strconv"
 	"strings"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 // RPNTuringMachine returns the result of a string in reverse polish notation (postfix) by using a turing machine.

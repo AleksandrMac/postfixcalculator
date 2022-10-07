@@ -1,4 +1,4 @@
-module github.com/iwdgo/postfixcalculator
+module github.com/AleksandrMac/postfixcalculator
 
 go 1.14
 

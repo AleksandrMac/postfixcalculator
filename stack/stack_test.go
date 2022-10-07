@@ -2,13 +2,13 @@ package stack
 
 import (
 	"fmt"
-	values "github.com/iwdgo/postfixcalculator/common"
 	"testing"
+
+	values "github.com/AleksandrMac/postfixcalculator/common"
 )
 
 /*
 Running exemples where fmt is needed to check output.
-
 */
 func ExampleRPNStack() {
 	fmt.Printf("%.13f", RPNStack(values.Input))
