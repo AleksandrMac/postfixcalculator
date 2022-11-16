@@ -12,6 +12,9 @@ import (
 // RPNStack prints the result of a string in reverse polish notation (postfix)
 // using stack package of golang-collections.
 func RPNStack(input string) float64 {
+	if input == "" {
+		return 0.0
+	}
 	num := 0.0
 	stackOperands := stack.Stack{} //= stack.New()
 	var err error
